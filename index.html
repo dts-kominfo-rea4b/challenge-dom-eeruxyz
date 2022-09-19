@@ -6,19 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge - DOM</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background: rgb(109, 133, 253);
+    }
+
+    .center {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      width: 500px;
+      height: 600px;
+    }
+
+    .center h1 {
+      text-align: center;
+    }
+
+    .center p {
+      text-align: center;
+    }
+
+    .center .form {
+      box-sizing: border-box;
+      padding: 0 40px;
+    }
+
+    .form .text_field {
+      position: relative;
+      margin: 30px 0;
+    }
+
+    .button {
+      border: 1px solid;
+      background: rgb(48, 52, 255);
+      color: azure;
+      width: 20%;
+      height: 30px;
+    }
+
+    .text_field input {
+      width: 70%;
+      height: 30px;
+      font-size: 16px;
+      padding: 0 5px;
+      background: none;
+    }
+  </style>
   <body>
     <div id="app">
-      <!-- TODO: Buatlah sebuah header dengan id todo-title -->
-      <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
-
-      <!-- Section: input -->
-      <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
-      <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
-
-      <!-- Section output -->
-      <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
+    <div class="container">
+      <div class="center">
+        <div class="form">
+          <!-- TODO: Buatlah sebuah header dengan id todo-title -->
+          <h1 id="todo-title">Todo List</h1>
+          <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
+          <p id="todo-subtitle">--To Day I need---</p>
+          <!-- Section: input -->
+          <div class="text_field">
+            <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
+            <input type="text" id="todo-input" placeholder="input here">
+            <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
+            <button type="button" id="todo-submit" class="button">Add</button>
+          </div>
+          <!-- Section output -->
+          <div class="list">
+            <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
+            <ul id="todo-output"></ul>
+          </div>
+        </div>
+      </div>
     </div>
-
+    </div>
     <!-- ! Untuk tantangan ini, script jangan diubah ke external js yah ! -->
     <script>
       // TODO: Deklarasi variable sesuai dengan kebutuhan di sini
